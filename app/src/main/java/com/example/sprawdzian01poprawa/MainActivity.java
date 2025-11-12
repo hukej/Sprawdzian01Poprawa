@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         LinearLayout mainLayout =findViewById(R.id.main);
         mainLayout.addView(btn);
+        //przycisk
 
     }
 }
