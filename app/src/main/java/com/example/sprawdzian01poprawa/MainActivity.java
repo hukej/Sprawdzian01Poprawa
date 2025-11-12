@@ -1,6 +1,8 @@
 package com.example.sprawdzian01poprawa;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Button btn = new Button(this);
+        btn.setText("Kliknij Mnie!!!");
+        btn.setAllCaps(false);
+
+        LinearLayout mainLayout =findViewById(R.id.main);
+        mainLayout.addView(btn);
+
     }
 }
